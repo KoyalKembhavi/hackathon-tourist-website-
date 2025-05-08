@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('./images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.left {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: rgb(2, 35, 50);
+}
+
+.japan {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.4rem;
+  color: rgb(28, 77, 99);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(194, 221, 234);
+}
+
+nav ul {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(16, 111, 155);
+}
+
+nav ul li a:hover {
+  color: rgb(9, 71, 99);
+  font-size: 1.3rem;
+}
+
+.image1 img {
+  height: 80px;
+  width: 80px;
+}
+
+.port {
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.text {
+  font-family: "playfair-display", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(2, 38, 62);
+  font-size: 100px;
+  align-items: center;
+}
+
+.summary-section {
+  background-color: #ace2f499;
+  padding: 80px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.summary-section h2 {
+  font-size: 3rem;
+  color: rgb(2, 38, 62);
+  margin-bottom: 60px;
+  letter-spacing: 1.5px;
+}
+
+.summary-section p {
+  font-size: 1.4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: rgb(2, 38, 62);
+}
+
+
+@media (max-width: 768px) {
+  .summary-section {
+    padding: 50px 20px;
+  }
+
+  .summary-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .summary-section p {
+    font-size: 1rem;
+  }
+}
+
+.back-to-top {
+  font-weight: bolder;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #032734;
+  padding: 5px 5px;
+  border-radius: 8px;
+  display: block;
+  z-index: 1000;
+  transition: background-color 0.15s;
+}
+
+.back-to-top img {
+  height: 40px;
+  width: 40px;
+}
+
+
+html:has(:target) .back-to-top {
+  display: block;
+}
+
+.back-to-top:hover {
+  background-color: #175368;
+}
+
+.back-to-top:active {
+  background-color: #268cb1;
+}
+
+footer {
+  background-color: #021116;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
